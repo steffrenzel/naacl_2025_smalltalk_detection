@@ -1,0 +1,39 @@
+Dear participants,
+thanks for working on the annotation of small talk training data! Please read the following guidelines carefully.
+
+In the course of our research project, we recorded spoken conversations during public service encounters.
+We transcribed and anonymized the conversations and now we want to classify the text data in terms of small talk.
+
+Your task will be the following:
+You will receive a csv file containing one utterance per row. Please note that several conversations are combined in this dataframe - you can track beginnings of a new conversation using the 'filename' column.
+Your task is to rate the utterance in question binary (insert '1' if the utterance is small talk or '0' if it is not small talk, use the column 'annotations' for your rating).
+
+Follow these three steps when annotate:
+1. Check topic:
+	- Small talk is a polite conversation about light topics. It's main purpose is the maintenance of social relations.
+	  It is used to create a basis for the main discussion of the conversation.
+	- The choice of topic of small talk is related to the situation in which the conversation takes place. 
+	  The context of the recordings in our dataset is always the same:
+	  Two strangers meet (usually for the first time) to discuss some administrative matters. 
+	  The client is in most cases in need of social benefits.
+	  The administrative workers often try to use small talk to get an update on the life situation of the client.
+	- The following semantic fields are assumed to be frequent in the context of public service encounters:
+		- Health of client: diseases and injuries
+		- Family situation: kids and parents
+		- General job situation and educational system
+		- Light discussions about politics
+		- The Corona-pandemic, restrictions and their consequences
+
+2. Check emotion:
+	- Small Talk is technically not restricted to certain topics. 
+	  However, it is usually about things that the speaker can easily agree on.
+	- There shouldn't be disagreement items or serious discussions in small talk sections.
+
+3. Check position:
+	- Speakers structure a conversation by inserting small talk sections. 
+	  These sections are most likely found at the beginning or at the end of a conversation.
+	  Small Talk sections are unlikely to be found in the middle of the conversation, where the main discussion takes place. 
+	  To give you some more information on that, timestamps of the utterances are provided as well.
+	- Also, Small Talk utterances usually don't appear isolated. Make sure at least to adjacent utterances are rated as Small Talk!
+
+In general it is very difficult to define and annotate small talk clearly. You will get a lot of utterances that are somewhere in between. Take the context of the conversation into account, but if you are not sure about an utterance, rate it as '0'!
